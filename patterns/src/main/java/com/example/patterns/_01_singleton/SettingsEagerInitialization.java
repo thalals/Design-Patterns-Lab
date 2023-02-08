@@ -1,4 +1,4 @@
-package com.example.patterns.singleton;
+package com.example.patterns._01_singleton;
 
 public class SettingsEagerInitialization {
     private static SettingsEagerInitialization instance = new SettingsEagerInitialization();

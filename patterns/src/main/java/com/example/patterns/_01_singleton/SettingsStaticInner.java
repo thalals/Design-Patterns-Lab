@@ -1,6 +1,9 @@
-package com.example.patterns.singleton;
+package com.example.patterns._01_singleton;
 
-public class SettingsStaticInner {
+import java.io.Serializable;
+
+public class SettingsStaticInner implements Serializable {
+
     private static SettingsStaticInner instance;
 
     private SettingsStaticInner() {}
@@ -11,6 +14,10 @@ public class SettingsStaticInner {
     }
 
     public static SettingsStaticInner getInstance() {
+        return SettingHolder.SETTINGS;
+    }
+
+    private Object readResolve() {
         return SettingHolder.SETTINGS;
     }
 }

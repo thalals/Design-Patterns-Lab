@@ -1,4 +1,4 @@
-package com.example.patterns.singleton;
+package com.example.patterns._01_singleton;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
