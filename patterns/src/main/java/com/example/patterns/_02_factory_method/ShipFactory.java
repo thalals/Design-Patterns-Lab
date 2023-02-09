@@ -1,5 +1,6 @@
 package com.example.patterns._02_factory_method;
 
+import com.example.patterns._02_factory_method.Ship;
 import java.util.Objects;
 
 public interface ShipFactory {
