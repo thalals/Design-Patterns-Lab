@@ -2,9 +2,7 @@ package com.example.patterns._04_builder_pattern;
 
 import java.time.LocalDate;
 import java.util.List;
-import lombok.Builder;
 
-@Builder
 public class TourPlan {
 
     private String title;
