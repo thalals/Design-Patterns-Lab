@@ -6,7 +6,6 @@ import com.example.patterns._06_adapter_pattern._02_after.security.UserDetailsSe
 public class App {
 
     public static void main(String[] args) {
-        AccountService accountService = new AccountService();
         UserDetailsService userDetailsService = new AccountService();
         LoginHandler loginHandler = new LoginHandler(userDetailsService);
 
