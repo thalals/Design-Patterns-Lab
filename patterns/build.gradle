@@ -23,6 +23,8 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// https://mvnrepository.com/artifact/jakarta.mail/jakarta.mail-api
+	implementation 'jakarta.mail:jakarta.mail-api:2.1.1'
 }
 
 tasks.named('test') {
