@@ -13,7 +13,7 @@ public class Client {
         blueLightRedLight.redRight();
 
         //매소드 파라미터에서 전략을 매개변수로 받아서 실행해도 됨 → 중요한건 전략을 유연하게 선택한다는 것
-        BlueLightRedLight context = new BlueLightRedLight();
+        BlueLightRedLight_2 context = new BlueLightRedLight_2();
         context.blueRight(new Normal());
         context.redRight(new Fastest());
 
