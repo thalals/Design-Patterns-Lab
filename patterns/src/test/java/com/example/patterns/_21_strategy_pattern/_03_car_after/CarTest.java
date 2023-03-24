@@ -14,7 +14,7 @@ class CarTest {
         Car car = new Car();
 
         when(RandomUtil.getNumber()).thenReturn(5);
-        car.go(RandomUtil.getNumber());
+        car.go();
 
         assertThat(car.getNowMovementResult()).isEqualTo(1);
     }

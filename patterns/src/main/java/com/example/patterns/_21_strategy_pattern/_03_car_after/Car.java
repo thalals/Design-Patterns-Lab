@@ -4,8 +4,8 @@ public class Car {
 
     private int movementDistance;
 
-    public void go(int randomNumber) {
-        if (randomNumber > 4) {
+    public void go() {
+        if (RandomUtil.getNumber() > 4) {
             movementDistance += 1;
         }
     }
