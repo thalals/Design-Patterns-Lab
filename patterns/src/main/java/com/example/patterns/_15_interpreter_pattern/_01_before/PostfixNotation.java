@@ -23,6 +23,7 @@ public class PostfixNotation {
             switch (c) {
                 case '+':
                     numbers.push(numbers.pop() + numbers.pop());
+                    break;
                 case '-':
                     int right = numbers.pop();
                     int left = numbers.pop();
