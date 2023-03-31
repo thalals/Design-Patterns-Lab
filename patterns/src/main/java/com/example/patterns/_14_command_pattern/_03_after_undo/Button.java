@@ -4,6 +4,7 @@ import java.util.Stack;
 
 public class Button {
 
+    //커멘드 패턴은 명령어를 넘긴다.
     private final Stack<Command> commands = new Stack<>();
 
     public void press(Command command) {
