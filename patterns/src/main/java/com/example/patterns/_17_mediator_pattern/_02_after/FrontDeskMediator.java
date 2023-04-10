@@ -7,6 +7,8 @@ package com.example.patterns._17_mediator_pattern._02_after;
 public class FrontDeskMediator {
 
     private final CleaningService cleaningService = new CleaningService();
+    private final Restaurant restaurant = new Restaurant();
+    private final Gym gym = new Gym();
 
     public void getTowers(Guest guest, int numberOfTowers) {
         cleaningService.getTower(guest.getId(), numberOfTowers);
@@ -14,5 +16,9 @@ public class FrontDeskMediator {
 
     public String getRoomNumber(Integer guestId) {
         return guestId + "room number : 1";
+    }
+
+    public void dinner(Guest guest) {
+        restaurant.dinner(guest.getId());
     }
 }
