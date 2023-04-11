@@ -4,6 +4,7 @@ public class Client {
 
     private RequestHandler requestHandler;
 
+    //요청을 처리할 Handler 를 주입받을
     public Client(RequestHandler requestHandler) {
         this.requestHandler = requestHandler;
     }
@@ -14,8 +15,8 @@ public class Client {
     }
 
     public static void main(String[] args) {
-        RequestHandler chain = new AuthRequestHandler(
-            new LoggingRequestHandler(new PrintRequestHandler(null)));
+        //각 책임이 연결되게
+        RequestHandler chain = new AuthRequestHandler(new LoggingRequestHandler(new PrintRequestHandler(null)));
 
         Client client = new Client(chain);
     }
