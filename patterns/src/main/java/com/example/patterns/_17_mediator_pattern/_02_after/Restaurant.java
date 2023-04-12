@@ -7,6 +7,6 @@ public class Restaurant {
     private FrontDeskMediator mediator = new FrontDeskMediator();
 
     public void dinner(int guestId) {
-        System.out.println("dinner " + mediator.get);
+        System.out.println("dinner " + mediator.getRoomNumber(guestId));
     }
 }
