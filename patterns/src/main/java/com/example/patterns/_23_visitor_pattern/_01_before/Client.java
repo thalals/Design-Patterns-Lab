@@ -6,5 +6,10 @@ public class Client {
         Shape rectangle = new Rectangle();
         Shape triangle = new Triangle();
 
+        rectangle.printTo(new Watch());
+        rectangle.printTo(new Phone());
+
+        triangle.printTo(new Watch());
+        triangle.printTo(new Phone());
     }
 }

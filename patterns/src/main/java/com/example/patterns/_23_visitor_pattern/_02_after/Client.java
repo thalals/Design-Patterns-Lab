@@ -4,12 +4,20 @@ public class Client {
 
     public static void main(String[] args) {
         Shape rectangle = new Rectangle();
-        Device device = new Phone();
+        Shape circle = new Circle();
+        Shape triangle = new Triangle();
+
+        Device phone = new Phone();
+        Device watch = new Watch();
 
         //상위 타입인 device 가 지원이 되지 않음
-        rectangle.printTo(device);
+        rectangle.accept(phone);
+        rectangle.accept(watch);
 
+        circle.accept(phone);
+        circle.accept(watch);
 
-
+        triangle.accept(phone);
+        triangle.accept(watch);
     }
 }

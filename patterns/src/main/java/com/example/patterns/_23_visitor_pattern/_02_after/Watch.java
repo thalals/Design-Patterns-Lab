@@ -5,7 +5,7 @@ public class Watch implements Device {
 
     @Override
     public void print(Circle circle) {
-        System.out.println("print Rectangle to Watch");
+        System.out.println("print Circle to Watch");
     }
 
     @Override
@@ -14,8 +14,5 @@ public class Watch implements Device {
     }
 
     @Override
-    public void print(Rectangle rectangle) {
-        System.out.println("print Rectangle to Watch");
-
-    }
+    public void print(Rectangle rectangle) { System.out.println("print Rectangle to Watch");}
 }
